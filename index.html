@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>sg-rclone — Personal Google Drive sync</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, sans-serif; max-width: 760px; margin: 48px auto; padding: 0 24px; line-height: 1.7; }
+    h1, h2 { line-height: 1.25; }
+    nav { margin-bottom: 32px; }
+    nav a { margin-right: 20px; }
+    a { color: #357bd6; }
+    footer { margin-top: 40px; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <nav aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="privacy.html">Privacy policy</a></nav>
+  <main>
+    <h1>sg-rclone</h1>
+    <p>A personal Google Drive synchronization tool operated by its owner using rclone on an owner-managed Linux server.</p>
+    <h2>What the application does</h2>
+    <ul>
+      <li>Downloads Markdown documents from a selected Google Drive folder while preserving its directory structure.</li>
+      <li>Uploads completed files from a separate local results folder to a dedicated Google Drive results folder.</li>
+      <li>Checks for changes on a schedule and retains destination files when their source files are removed.</li>
+    </ul>
+    <h2>Google account access</h2>
+    <p>The application requests Google Drive access so it can read existing documents and upload result files. Its configured transfer paths restrict its normal operations to the folders selected by the owner. The Google permission itself covers a broader set of Drive files than those configured paths.</p>
+    <p>This application is intended for its owner's personal use. These public information pages do not provide a Google sign-in form or accept documents, access tokens, or client secrets.</p>
+    <h2>Contact</h2>
+    <p>Use the owner's support email shown on the application's Google authorization screen for questions about this application or its data handling.</p>
+    <p>For details, read the <a href="privacy.html">privacy policy</a>.</p>
+  </main>
+  <footer>sg-rclone · Personal-use application</footer>
+</body>
+</html>
